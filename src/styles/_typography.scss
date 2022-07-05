@@ -1,3 +1,5 @@
+@import './variables';
+
 html {
     font-size: 125%;
 }
@@ -6,6 +8,7 @@ body {
     font-family: "Barlow Condensed", sans-serif;
     font-size: .8rem;
     font-weight: 400;
+    color: $white;
 }
 
 h1,
@@ -60,4 +63,8 @@ h5 {
 nav {
     font-size: .8rem;
     letter-spacing: 2.7;
+}
+
+.bold {
+    font-weight: 700;
 }

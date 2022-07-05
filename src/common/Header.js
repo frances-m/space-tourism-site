@@ -6,23 +6,26 @@ import './Header.scss';
 
 export const Header = () => {
     return (
-        <header>
+        <header class="header">
             {/* Site Logo */}
-            <img src={logo} alt="site logo" />
+            <div class="header__logo">
+                <img src={logo} alt="site logo" />
+            </div> {/* END header__logo */}
 
-            <nav>
+            {/* Header Nav */}
+            <nav class="header__nav">
                 <ul>
                     <li>
-                        <Link to="/"><em>00</em> Home</Link>
+                        <Link to="/"><span class="bold">00</span> Home</Link>
                     </li>
                     <li>
-                        <Link to="/destination"><em>01</em> Destination</Link>
+                        <Link to="/destination"><span class="bold">01</span> Destination</Link>
                     </li>
                     <li>
-                        <Link to="/crew"><em>02</em> Crew</Link>
+                        <Link to="/crew"><span class="bold">02</span> Crew</Link>
                     </li>
                     <li>
-                        <Link to="/technology"><em>03</em> Technology</Link>
+                        <Link to="/technology"><span class="bold">03</span> Technology</Link>
                     </li>
                 </ul>
             </nav>

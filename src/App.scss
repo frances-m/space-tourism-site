@@ -1,4 +1,6 @@
-body {
-  min-height: 100vh;
+@use './styles/variables';
+
+.bg--home {
+    background-image: url(./assets/home/background-home-desktop.jpg);
 }
 

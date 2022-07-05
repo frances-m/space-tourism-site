@@ -1,0 +1,66 @@
+@import '../styles/variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 96px;
+    padding: 40px 0 0 0;
+
+    &__logo {
+        padding: 0 0 0 55px;
+    }
+
+    &__nav {
+        position: relative;
+
+        width: 57.64vw;
+        max-width:  830px;
+        height: 96px;
+
+        &::before {
+            content: "";
+            
+            position: absolute;
+            top: 50%;
+            left: -53.4%;
+
+            width: 56.988%;
+            max-width: 473px;
+            height: 1px;
+    
+            background-color: #979797;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 542px;
+            height: inherit;
+            margin: 0;
+            padding-left: 14.82%;
+        }
+
+        .bold {
+            padding-right: 12px;
+        }
+    }
+}
+
+// Thanks to GitHub user mrtcmn for this gist explaining how to use the @supports query to create a workaround for firefox which does not yet support backdrop-filter by default
+// https://gist.github.com/mrtcmn/0490fb79fa63418e4409a99553f80e26
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .header__nav {
+        background-color: rgba($white, 0.04);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+    }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .header__nav {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(160, 160, 160, 0.2) 0%, rgba(11,13,23,0.75) 220px);
+    }
+}

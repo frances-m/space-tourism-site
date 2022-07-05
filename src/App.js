@@ -1,10 +1,17 @@
 import { Header } from './common/Header';
 
-import './App.scss';
+import './app.scss';
 
 function App() {
     return (
-        <Header />
+        <div class="bg bg--home">
+            <Header />
+            <main class="home">
+                <div class="wrapper">
+
+                </div>
+            </main>
+        </div>
     );
 }
 
