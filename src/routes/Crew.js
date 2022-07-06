@@ -4,9 +4,11 @@ import './crew.scss';
 
 export const Crew = () => {
     return (
-        <div class="bg bg--crew">
+        <div className="bg bg--crew">
             <Header />
-            <h1>Crew</h1>
+            <div className="wrapper">
+
+            </div> {/* END wrapper */}
         </div>
     );
 }

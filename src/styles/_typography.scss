@@ -5,10 +5,15 @@ html {
 }
 
 body {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: .8rem;
+    font-family: "Barlow", sans-serif;
+    font-size: .9rem;
     font-weight: 400;
     color: $white;
+}
+
+p {
+    line-height: 32px;
+    margin: 0;
 }
 
 h1,
@@ -17,7 +22,6 @@ h3,
 h4,
 .subheading--one {
     font-family: "Bellefair", serif;
-    font-weight: 400;
 }
 
 h1,
@@ -27,7 +31,9 @@ h4,
 h5,
 .subheading,
 nav {
+    font-weight: 400;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h1 {
@@ -51,18 +57,23 @@ h5,
     font-size: 1.4rem;
 }
 
+h5, 
+.subheading {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
 h5 {
-    letter-spacing: 4.75;
+    letter-spacing: 4.75px;
 }
 
 .subheading--two {
     font-size: .7rem;
-    letter-spacing: 2.35;
+    letter-spacing: 2.35px;
 }
 
 nav {
     font-size: .8rem;
-    letter-spacing: 2.7;
+    letter-spacing: 2.7px;
 }
 
 .bold {

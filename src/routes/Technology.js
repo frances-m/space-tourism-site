@@ -4,9 +4,11 @@ import './technology.scss';
 
 export const Technology = () => {
     return (
-        <div class="bg bg--technology">
+        <div className="bg bg--technology">
             <Header />
-            <h1>Technology</h1>
+            <div className="wrapper">
+
+            </div> {/* END wrapper */}
         </div>
     );
 }

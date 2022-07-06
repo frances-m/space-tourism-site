@@ -1,6 +1,57 @@
-@use './styles/variables';
+@import './styles/variables';
+@import './styles/placeholders';
 
 .bg--home {
     background-image: url(./assets/home/background-home-desktop.jpg);
 }
 
+.home {
+    height: calc(100vh - (96px + 40px));
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 131px;
+    }
+
+    &__text-container {
+        width: 450px;
+
+        h5,
+        h1 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn-container {
+        position: relative;
+        top: 88px;
+        left: 88px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 450px;
+        min-height: 450px;
+        border-radius: 100%;
+
+        transition: .5s;
+
+        &:hover {
+            background-color: rgba($white, .1);
+        }
+        
+    }
+
+    button {
+        min-width: 274px;
+        height: 274px;
+        border-radius: 100%;
+
+        background-color: $white;
+
+        cursor: pointer;
+    }
+}
