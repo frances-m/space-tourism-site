@@ -65,14 +65,6 @@
             align-items: center;
             height: 96px;
         }
-
-        .current {
-            @extend %current-page;  
-
-            &:hover {
-                border-color: inherit;
-            }
-        }
         
         span {
             display: inline-block;

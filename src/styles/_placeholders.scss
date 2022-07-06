@@ -5,3 +5,7 @@
     height: calc(96px - 3px);
     border-bottom: 3px solid $white;
 }
+
+%active-tab {
+    border-bottom: 3px solid $white;
+}

@@ -1,5 +1,86 @@
 @import '../styles/variables';
+@import '../styles/placeholders';
+@import '../styles/animations';
 
 .bg--destination {
     background-image: url('../assets/destination/background-destination-desktop.jpg');
+}
+
+.destination {
+    &__heading {
+        margin: 76px 0 0 0;
+
+        .bold {
+            color: rgba($white, .3);
+            margin-right: 28px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: 505px;
+        margin: 64px 0 0 0;
+    }
+
+    &__img-container {
+        align-self: flex-end;
+        min-width: 445px;
+        height: 445px;
+        margin: 0 0 0 63.5px;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 285.5px;
+            margin: 0 0 37px 0;
+        }
+
+        button {
+            padding: 0 0 12px 0;
+
+            &:hover {
+                @extend %active-tab;
+                border-color: rgba($white, .5);
+            }
+        }
+    }
+
+    &__text-container {
+        width: 445px;
+
+    }
+    
+    &__name {
+        margin: 0 0 14px 0;
+    }
+    
+    &__description {
+        margin: 0 0 54px 0;
+    }
+
+    hr {
+        margin: 0 0 28px 0;
+        
+        color: #383B4B;
+    }
+
+    &__travel-info-container {
+        display: flex;   
+    }
+
+    &__travel-info {
+
+        &:first-of-type {
+            margin: 0 79px 0 0;
+        }
+
+        p:first-of-type {
+            margin: 0 0 12px 0;
+        }
+    }
+
+    
 }

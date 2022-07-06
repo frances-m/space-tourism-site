@@ -16,25 +16,25 @@ p {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-.subheading--one {
-    font-family: "Bellefair", serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
+h1, h2, h3, h4, h5,
 .subheading,
-nav {
+nav, .nav-btn {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
 }
+
+h1, h2, h3, h4,
+.subheading--one {
+    font-family: "Bellefair", serif;
+}
+
+h5, 
+nav .nav-btn, 
+.subheading--two {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
 
 h1 {
     font-size: 7.5rem;
@@ -57,11 +57,6 @@ h5,
     font-size: 1.4rem;
 }
 
-h5, 
-.subheading {
-    font-family: "Barlow Condensed", sans-serif;
-}
-
 h5 {
     letter-spacing: 4.75px;
 }
@@ -71,7 +66,7 @@ h5 {
     letter-spacing: 2.35px;
 }
 
-nav {
+nav, .nav-btn {
     font-size: .8rem;
     letter-spacing: 2.7px;
 }

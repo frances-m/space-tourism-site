@@ -1,8 +1,19 @@
+@import '../styles/variables';
+@import '../styles/placeholders';
+@import '../styles/animations';
+
 .bg {
     width: 100vw;
     min-height: 100vh;
 
     background-size: cover;
+}
+
+.home,
+.destination,
+.crew,
+.technology {
+    animation: fadein .7s;
 }
 
 .wrapper {
@@ -17,6 +28,26 @@ img {
 
 button {
     padding: 0;
-    background-color: none;
     border: none;
+
+    background-color: transparent;
+    color: $white;
+
+    cursor: pointer;
+}
+
+.current {
+    @extend %current-page;  
+
+    &:hover {
+        border-color: inherit;
+    }
+}
+
+.active {
+    @extend %active-tab;  
+
+    &:hover {
+        border-color: inherit;
+    }
 }
