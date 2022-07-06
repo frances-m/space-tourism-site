@@ -5,3 +5,76 @@
     background-image: url('../assets/crew/background-crew-desktop.jpg');
 }
 
+.crew {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-container {
+        position: relative;
+        height: 594px;
+        margin: 76px 0 0 0;
+
+        h5 {
+            margin: 0 0 154px 0;
+        }
+
+        h4 {
+            margin: 0 0 15px 0;
+            opacity: .5;
+        }
+
+        h3 {
+            margin: 0 0 27px;
+            
+        }
+
+        p {
+            width: 444px;
+            margin: 0 0 120px 0;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            position: fixed;
+            bottom: 0;
+        }
+    }
+
+    &__img {
+        &--commander {
+            height: 712px;
+        }
+    }
+
+    &__btn-container {
+        position: absolute;
+        bottom: 0;
+        
+        display: flex;
+        justify-content: space-between;
+        width: 132px;
+
+        button {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: rgba($white, .2);
+            
+            transition: .4s;
+
+            &:hover,
+            &:focus {
+                background-color: rgba($white, .6);
+            }
+        }
+    }
+}

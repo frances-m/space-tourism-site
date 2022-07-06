@@ -53,17 +53,21 @@
             &:last-of-type {
                 margin-right: 0;
             }
-
-            &:hover {
-                @extend %current-page;
-                border-color: rgba($white, .5);
-            }
         }
 
         a {
             display: flex;
             align-items: center;
             height: 96px;
+            transition: border-color .5s ease-in;
+
+            &:hover,
+            &:focus {
+                @extend %current-page;
+                border-color: rgba($white, .5);
+
+                outline: none;
+            }
         }
         
         span {

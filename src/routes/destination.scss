@@ -40,8 +40,10 @@
 
         button {
             padding: 0 0 12px 0;
+            transition: border-color .5s ease-out;
 
-            &:hover {
+            &:hover, 
+            &:focus {
                 @extend %active-tab;
                 border-color: rgba($white, .5);
             }

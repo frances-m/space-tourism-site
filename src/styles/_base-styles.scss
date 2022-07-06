@@ -44,10 +44,14 @@ button {
     }
 }
 
-.active {
+.active-tab {
     @extend %active-tab;  
 
     &:hover {
         border-color: inherit;
     }
+}
+
+.active-btn {
+    background-color: $white !important;
 }
