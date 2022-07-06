@@ -60,6 +60,12 @@
             }
         }
 
+        a {
+            display: flex;
+            align-items: center;
+            height: 96px;
+        }
+
         .current {
             @extend %current-page;  
 
