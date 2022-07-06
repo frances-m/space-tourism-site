@@ -6,6 +6,10 @@
 }
 
 .crew {
+    .wrapper {
+        position: relative;
+        height: max(calc(900px - (96px + 40px)), calc(100vh - (96px + 40px)));
+    }
 
     &__content {
         display: flex;
@@ -38,22 +42,13 @@
     }
 
     &__img-container {
-        position: relative;
-
+        position: absolute;
+        bottom: 0;
+        right: 0;
         display: flex;
         justify-content: flex-end;
-
-        img {
-            position: fixed;
-            bottom: 0;
-        }
     }
 
-    &__img {
-        &--commander {
-            height: 712px;
-        }
-    }
 
     &__btn-container {
         position: absolute;

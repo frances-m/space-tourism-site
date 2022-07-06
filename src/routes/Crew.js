@@ -101,7 +101,7 @@ export const Crew = () => {
                             </div> {/* END crew__btn-container */}
                         </div> {/* END crew__text-container */}
                         <div className="crew__img-container">
-                            <img className={`crew__img--${crewMember.title}`} src={crewMember.imageSrc} alt={crewMember.alt} />
+                            <img src={crewMember.imageSrc} alt={crewMember.alt} />
                         </div>
                     </section>
                 </div> {/* END wrapper */}

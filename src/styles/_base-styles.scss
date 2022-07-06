@@ -2,9 +2,11 @@
 @import '../styles/placeholders';
 @import '../styles/animations';
 
+
 .bg {
     width: 100vw;
     min-height: 100vh;
+    height: 900px;
 
     background-size: cover;
 }
