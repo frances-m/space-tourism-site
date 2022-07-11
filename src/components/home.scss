@@ -1,8 +1,8 @@
-@import './styles/variables';
-@import './styles/placeholders';
+@import '../styles/variables';
+@import '../styles/placeholders';
 
 .bg--home {
-    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
 }
 
 .home {

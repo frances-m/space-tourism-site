@@ -55,11 +55,17 @@
             }
         }
 
-        a {
+        button {
             display: flex;
             align-items: center;
             height: 96px;
             transition: border-color .5s ease-in;
+
+            font-family: inherit;
+            font-size: inherit;
+            letter-spacing: inherit;
+            text-transform: inherit;
+            line-height: inherit;
 
             &:hover,
             &:focus {

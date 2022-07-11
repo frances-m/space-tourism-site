@@ -1,11 +1,7 @@
-import { Link } from "react-router-dom";
-
 import logo from '../assets/shared/logo.svg';
-
 import './Header.scss';
 
-export const Header = () => {
-    const currentPage = window.location.pathname;
+export const Header = (props) => {
 
     return (
         <header className="header">
@@ -17,17 +13,25 @@ export const Header = () => {
             {/* Header Nav */}
             <nav className="header__nav">
                 <ul>
-                    <li className={currentPage === "/" ? "current" : ""}>
-                        <Link to="/"><span className="bold">00</span>Home</Link>
+                    <li className={props.currentPage === "home" ? "current" : ""}>
+                        <button type="button" onClick={props.handleNavClick} value="home">
+                            <span className="bold">00</span>Home
+                        </button>
                     </li>
-                    <li className={currentPage === "/destination" ? "current" : ""}>
-                        <Link to="/destination"><span className="bold">01</span>Destination</Link>
+                    <li className={props.currentPage === "destination" ? "current" : ""}>
+                        <button type="button" onClick={props.handleNavClick} value="destination">
+                            <span className="bold">01</span>Destination
+                        </button>
                     </li>
-                    <li className={currentPage === "/crew" ? "current" : ""}>
-                        <Link to="/crew"><span className="bold">02</span>Crew</Link>
+                    <li className={props.currentPage === "crew" ? "current" : ""}>
+                        <button type="button" onClick={props.handleNavClick} value="crew">
+                            <span className="bold">02</span>Crew
+                        </button>
                     </li>
-                    <li className={currentPage === "/technology" ? "current" : ""}>
-                        <Link to="/technology"><span className="bold">03</span>Technology</Link>
+                    <li className={props.currentPage === "technology" ? "current" : ""}>
+                        <button type="button" onClick={props.handleNavClick} value="technology">
+                            <span className="bold">03</span>Technology
+                        </button>
                     </li>
                 </ul>
             </nav>
