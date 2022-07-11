@@ -57,3 +57,16 @@ button {
 .active-btn {
     background-color: $white !important;
 }
+
+.destination,
+.crew,
+.technology {
+    h5 {
+        margin: 76px 0 0 0;
+
+        .bold {
+            color: rgba($white, .4);
+            margin-right: 20px;
+        }
+    }
+}

@@ -51,8 +51,8 @@ const crew = {
 export const Crew = () => {
     const [crewMember, setCrewMember] = useState(crew.commander);
 
-    const handleCrewClick = ({ target }) => {
-        const title = target.value;
+    const handleCrewClick = ({ currentTarget }) => {
+        const title = currentTarget.value;
         
         setCrewMember(crew[title]);
     }
@@ -72,6 +72,7 @@ export const Crew = () => {
 
                             <div className="crew__btn-container">
                                 <button 
+                                    type="button"
                                     className={crewMember.title === "commander" ? "active-btn" : ""} 
                                     onClick={handleCrewClick} 
                                     value="commander" 
@@ -79,6 +80,7 @@ export const Crew = () => {
                                 </button>
 
                                 <button 
+                                    type="button"
                                     className={crewMember.title === "mission specialist" ? "active-btn" : ""} 
                                     onClick={handleCrewClick} 
                                     value="specialist" 
@@ -86,6 +88,7 @@ export const Crew = () => {
                                 </button>
                                 
                                 <button 
+                                    type="button"
                                     className={crewMember.title === "pilot" ? "active-btn" : ""} 
                                     onClick={handleCrewClick} 
                                     value="pilot" 
@@ -93,6 +96,7 @@ export const Crew = () => {
                                 </button>
 
                                 <button 
+                                    type="button"
                                     className={crewMember.title === "flight engineer" ? "active-btn" : ""}
                                     onClick={handleCrewClick} 
                                     value="engineer" 

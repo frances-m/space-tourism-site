@@ -18,7 +18,7 @@ p {
 
 h1, h2, h3, h4, h5,
 .subheading,
-nav, .nav-btn {
+nav, .nav-btn, .nav-text {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
@@ -30,7 +30,7 @@ h1, h2, h3, h4,
 }
 
 h5, 
-nav .nav-btn, 
+nav .nav-btn, .nav-text
 .subheading--two {
     font-family: "Barlow Condensed", sans-serif;
 }
@@ -66,7 +66,7 @@ h5 {
     letter-spacing: 2.35px;
 }
 
-nav, .nav-btn {
+nav, .nav-btn, .nav-text {
     font-size: .8rem;
     letter-spacing: 2.7px;
 }

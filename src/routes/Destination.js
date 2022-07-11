@@ -56,8 +56,8 @@ export const Destination = () => {
     const [destination, setDestination] = useState(destinations.moon);
 
 
-    const handleDestinationClick = ({ target }) => {
-        const name = target.value;
+    const handleDestinationClick = ({ currentTarget }) => {
+        const name = currentTarget.value;
         
         setDestination(destinations[name]);
     }
